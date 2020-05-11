@@ -45,10 +45,10 @@ Please note, if an option with a default hasn't been set, the defaults will auto
 | Option | Type | Default | Description |
 | --- |:---:|:---:| --- |
 | **passes** | number | 1 | How many times latexmk should run (use 2 or more for pythontex) |
-| **args** | array<string> | ['-pdf', '-g', '-f', '-interaction=nonstopmode'] | The arguments that will be sent by default. Any arguments passed in the options object will be considered as additional to these four, unless **noargs** is set to true |
+| **args** | array\<string\> | \['-pdf', '-g', '-f', '-interaction=nonstopmode'\] | The arguments that will be sent by default. Any arguments passed in the options object will be considered as additional to these four, unless **noargs** is set to true |
 | **noargs** | boolean | false | Set this to true if you want to remove the arguments above and set them all yourself |
-| **dependencies** | array<string> | - | An array of paths to files you would like copied in addition to the tex file, for example a JSON object of options or a template file.
-| **dependencyRenames** | Object<string, string> | - | A dictionary that will allow the dependency files to be renamed upon copy. Useful if you need to dynamically generate them with random filenames but your `.tex` file expects something with a certain name |
+| **dependencies** | array\<string\> | - | An array of paths to files you would like copied in addition to the tex file, for example a JSON object of options or a template file.
+| **dependencyRenames** | Object\<string, string\> | - | A dictionary that will allow the dependency files to be renamed upon copy. Useful if you need to dynamically generate them with random filenames but your `.tex` file expects something with a certain name |
 | **ignoreNoTex** | boolean | false | node-latexmk will return an error if your input file does not end in `.tex`. Set this to true to ignore that behaviour
 
 
