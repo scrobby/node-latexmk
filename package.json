@@ -1,6 +1,6 @@
 {
   "name": "node-latexmk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A wrapper for latexmk in node",
   "main": "index.js",
   "scripts": {
