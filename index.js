@@ -253,7 +253,7 @@ function runSpawn(command, arguments, options, callback) {
     })
 
     cmd.on('error', err => {
-        callback(stdout, stderr, error, null)
+        callback(stdout, stderr, err, null)
     })
 
     cmd.on('close', code => {
