@@ -9,14 +9,12 @@ The only scope I will personally be using this for, at least at the moment, is f
 ## Requirements
 You need to have LaTeX installed on your system. I believe latexmk is part of TeX Live. [Installation instructions](https://www.latex-project.org/get/) are on the LaTeX website.
 
-If you're on a Mac with Homebrew and don't want to do the full install, you can do a minimal installation by running
+If you're on a Mac with Homebrew you can install using
 ```bash
-brew cask install basictex
+brew cask install mactex
 ```
-Then use tlmgr to install latexmk and any other tools you might need (such as Pythontex)
-```bash
-sudo tlmgr install latexmk
-```
+
+It's technically possible to do a lightweight installation using basictex, but that requires a lot of manually installing packages, which is too much for me to go into here.
 
 
 ## Installation
