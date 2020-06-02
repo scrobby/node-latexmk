@@ -43,7 +43,7 @@ module.exports = latexmk = function (input, output, options, callback) {
 
             for (let [key, value] of Object.entries(options)) {
                 // do something slightly differently for the arguments to make sure we don't overwite, unless that option is selected
-                if (key.includes('args') && !noargs) {
+                if (key.includes('args') && !options.noargs) {
                     value.forEach(val => {
                         // see if the argument exists in the defaults 
                         if (newOptions.args.filter(a => a.includes(val)).length === 0) {
