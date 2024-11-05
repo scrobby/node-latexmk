@@ -1,6 +1,6 @@
 {
   "name": "node-latexmk",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "A wrapper for latexmk in node",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/scrobby/node-latexmk#readme",
   "dependencies": {
+    "del": "^5.1.0",
     "tmp": "^0.2.1"
   }
 }
