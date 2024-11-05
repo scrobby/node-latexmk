@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/scrobby/node-latexmk/issues"
   },
-  "homepage": "https://github.com/scrobby/node-latexmk#readme"
+  "homepage": "https://github.com/scrobby/node-latexmk#readme",
+  "dependencies": {
+    "tmp": "^0.2.1"
+  }
 }
