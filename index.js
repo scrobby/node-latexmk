@@ -20,7 +20,7 @@ const defaultOptions = {
  * @param {boolean} [options.ignoreNoTex] Overrides the check for the .tex extension on the input file. A .tex extension will automatically be added regardless, so only use this if you're sure it won't break things
  * @param {latexmk~callback} callback The callback that handles the response
  */
-latexmk = function (input, output, options, callback) {
+module.exports = latexmk = function (input, output, options, callback) {
     if (callback === undefined) {
         // options was not passed so let's set the callback properly
         if (typeof options === 'function') {
@@ -84,7 +84,7 @@ latexmk = function (input, output, options, callback) {
 
         Promise.all(fileCopyPromises)
             .then(() => {
-                
+
             })
             .catch((err) => {
                 handleErr(err)
@@ -106,7 +106,7 @@ latexmk = function (input, output, options, callback) {
  * @returns {string} Path of copied file (or an error)
  */
 function copyFromFile(from, to) {
-    return new Promose((res, rej) => {
+    return new Promise((res, rej) => {
         fs.copyFile(from, to, (err) => {
             if (err) {
                 rej(err)
