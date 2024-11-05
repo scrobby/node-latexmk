@@ -1,0 +1,22 @@
+{
+  "name": "node-latexmk",
+  "version": "0.0.1",
+  "description": "A wrapper for latexmk in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scrobby/node-latexmk.git"
+  },
+  "keywords": [
+    "latex"
+  ],
+  "author": "Carl Goldsmith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scrobby/node-latexmk/issues"
+  },
+  "homepage": "https://github.com/scrobby/node-latexmk#readme"
+}
