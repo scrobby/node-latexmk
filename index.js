@@ -4,7 +4,7 @@ const { spawn } = require('child_process')
 const tmp = require('tmp')
 const del = require('del')
 
-const hasHandledError = false
+var hasHandledError = false
 const defaultOptions = {
     args: ['-pdf', '-g', '-f', '-interaction=nonstopmode'],
     noargs: false,
