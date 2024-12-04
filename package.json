@@ -1,6 +1,6 @@
 {
   "name": "node-latexmk",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A wrapper for latexmk in node",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "latex"
   ],
-  "author": "Carl Goldsmith",
+  "author": "Chloë Goldsmith",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/scrobby/node-latexmk/issues"
